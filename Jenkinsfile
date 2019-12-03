@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Blue ocean test"'
+                sh 'echo "Blue ocean auto trigger"'
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
