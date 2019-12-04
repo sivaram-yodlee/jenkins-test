@@ -17,12 +17,12 @@ pipeline {
 
             steps {
                 sh 'echo "monalisa"'
-                /*withSonarQubeEnv('SonarServer') {
+                withSonarQubeEnv('SonarServer') {
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
                 timeout(time: 10, unit: 'MINUTES') {
                     waitForQualityGate abortPipeline: true
-                }*/   
+                }   
             }
         }   
     }
